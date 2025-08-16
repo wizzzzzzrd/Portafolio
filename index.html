@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portafolio - Profesional</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Joseph Alarcon<span class="ms-1 small text-white-50">• Portafolio</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link active" href="#projects">Proyectos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact" data-bs-toggle="modal" data-bs-target="#contactModal">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="py-5">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold reveal">Hola, Soy <span class="text-primary">Joseph</span> — desarrollador &amp; diseñador Web.</h1>
+        <p class="lead text-muted reveal reveal-delay-1">Construyo sitios y experiencias digitales pensadas para convertir visitantes en clientes. Aquí verás proyectos reales.</p>
+        <div class="d-flex gap-2 mt-4 reveal reveal-delay-2">
+          <a href="#projects" class="btn btn-primary btn-lg">Ver proyectos</a>
+          <button class="btn btn-outline-primary btn-lg" data-bs-toggle="modal" data-bs-target="#contactModal">Solicitar entrevista</button>
+        </div>
+        <div class="mt-4 text-muted small">
+          <span class="me-3"><strong>Especialidades:</strong> Web responsive · E‑commerce · UI/UX</span>
+        </div>
+      </div>
+      <div class="col-lg-6 text-center reveal reveal-delay-3">
+        <!-- Ilustración SVG libre (estilo simple, editable) -->
+        <svg class="hero-illustration" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustración equipo" >
+          <rect width="100%" height="100%" rx="24" fill="#ffffff"/>
+          <g transform="translate(40,40)">
+            <circle cx="200" cy="180" r="80" fill="#2a43d6" opacity=".08"/>
+            <g transform="translate(70,100)">
+              <rect x="220" y="90" width="120" height="160" rx="12" fill="#2a43d6" opacity=".12"/>
+              <path d="M50 10c50-30 120-30 170 0v160H50z" fill="#f0f4ff"/>
+              <circle cx="80" cy="40" r="36" fill="#2a43d6"/>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="projects" class="py-5">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="h3 fw-bold">Proyectos destacados</h2>
+        <div>
+          <div class="btn-group" role="group" aria-label="Filtrar proyectos">
+            <button class="btn btn-outline-secondary active" type="button" data-bs-filter="all">Todos</button>
+            <button class="btn btn-outline-secondary" type="button" data-bs-filter="web">Web</button>
+            <button class="btn btn-outline-secondary" type="button" data-bs-filter="ecom">E‑commerce</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Grid de tarjetas -->
+      <div id="projectsGrid" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <!-- Proyecto 1 -->
+        <div class="col" data-category="web">
+          <div class="card h-100 border-0 shadow-sm card-hover">
+            <img src="assets/Santo.png" alt="">            
+            <div class="card-body">
+              <h5 class="card-title">Santo Cielo - Certificado Web </h5>
+              <p class="card-text text-muted small">Certificado Web escaneable con NFC.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <div>
+                  <span class="badge bg-primary">Web</span>
+                  <span class="badge bg-light text-muted">UX</span>
+                </div>
+                <div>
+                  <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Certificado Santo Cielo" data-desc="Servicio Visual para marca de Ropa" data-tags="Certificado, UX, Diseño">Ver</button>
+                  <!-- Reemplaza el href con la URL real del proyecto -->
+                  <a class="btn btn-sm btn-primary ms-2" href="https://santocielo.neocities.org/" target="_blank" rel="noopener noreferrer" aria-label="Ver Santo Cielo en la web">Ver en la web</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 2 -->
+        
+        <div class="col" data-category="web">
+          <div class="card h-100 border-0 shadow-sm card-hover">
+            <img src="assets/landing.png" alt="">            
+            <div class="card-body">
+              <h5 class="card-title">Landing Servicios — Agencia</h5>
+              <p class="card-text text-muted small">Landing de conversión con formularios y animaciones.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <div>
+                  <span class="badge bg-primary">Web</span>
+                  <span class="badge bg-light text-muted">SEO</span>
+                </div>
+                <div>
+                  <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Landing Agencia" data-desc="Landing orientada a conversión con pruebas A/B y SEO on-page." data-tags="Landing, SEO, Forms">Ver</button>
+                  <!-- Reemplaza el href con la URL real del proyecto -->
+                  <a class="btn btn-sm btn-primary ms-2" href="https://wizzzzzzrd.github.io/WiznWeb.github.io/index.html" target="_blank" rel="noopener noreferrer" aria-label="Ver Landing Agencia en la web">Ver en la web</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+
+        <!-- Proyecto 3 -->
+        <div class="col" data-category="ecom">
+          <div class="card h-100 border-0 shadow-sm card-hover">
+            <img src="assets/ecomm.png" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Care++ — E Commerce</h5>
+              <p class="card-text text-muted small">Tienda local con catálogo, y gestión de inventario simple.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <div>
+                  <span class="badge bg-primary">E-commerce</span>
+                  <span class="badge bg-light text-muted">Bootstrap</span>
+                </div>
+                <div>
+                  <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Mercado Local" data-desc="Ecommerce con integración PayPal, gestión de pedidos y panel admin." data-tags="E-commerce, PayPal, PHP">Ver</button>
+                  <!-- Reemplaza el href con la URL real del proyecto -->
+                  <a class="btn btn-sm btn-primary ms-2" href="https://careplusplus.lovestoblog.com/index.php" target="_blank" rel="noopener noreferrer" aria-label="Ver Care++ en la web">Ver en la web</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 4 (ejemplo adicional) -->
+        <div class="col" data-category="web">
+          <div class="card h-100 border-0 shadow-sm card-hover">
+        <img src="assets/Portafolio.png" alt="">            
+            <div class="card-body">
+              <h5 class="card-title">Portfolio personal</h5>
+              <p class="card-text text-muted small">Rediseño con énfasis en performance y accesibilidad.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <div>
+                  <span class="badge bg-primary">Web</span>
+                  <span class="badge bg-light text-muted">Performance</span>
+                </div>
+                <div>
+                  <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Portfolio" data-desc="Rediseño con mejoras en tiempo de carga y accesibilidad." data-tags="Performance, Accesibilidad">Ver</button>
+                  <!-- Reemplaza el href con la URL real del proyecto -->
+                  <a class="btn btn-sm btn-primary ms-2" href="https://tudominio.com/portfolio-personal" target="_blank" rel="noopener noreferrer" aria-label="Ver Portfolio personal en la web">Ver en la web</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="text-center mt-4">
+        <a class="btn btn-outline-primary btn-lg" href="#contact" data-bs-toggle="modal" data-bs-target="#contactModal">¿Quieres ver más? Contáctame</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="about" class="py-5 bg-white">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-md-6">
+          <h3 class="fw-bold">Sobre mí</h3>
+          <p class="text-muted">Soy desarrollador full‑stack con experiencia en soluciones para pequeñas y medianas empresas. Me gusta crear interfaces limpias, accesibles y que cumplan objetivos de negocio.</p>
+
+          <ul class="list-unstyled">
+            <li class="mb-2"><strong>🛠 Herramientas:</strong> HTML, CSS, Bootstrap, PHP, MySQL, JS.</li>
+            <li class="mb-2"><strong>📈 Resultados:</strong> Proyectos con mejoras en conversiones y carga de páginas.</li>
+            <li class="mb-2"><strong>🕒 Disponibilidad:</strong> freelance / tiempo parcial / contrato. </li>
+          </ul>
+
+          <a href="#" class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#contactModal">Solicitar entrevista</a>
+        </div>
+        <div class="col-md-6 text-center">
+          <svg width="280" height="220" viewBox="0 0 400 300" class="img-fluid" role="img" aria-label="Ilustración sobre skills">
+            <rect width="100%" height="100%" rx="16" fill="#fff"/>
+            <g transform="translate(32,20)">
+              <rect x="0" y="10" width="120" height="20" rx="6" fill="#eef3ff"/>
+              <rect x="0" y="44" width="180" height="20" rx="6" fill="#f4fff5"/>
+              <rect x="0" y="78" width="80" height="20" rx="6" fill="#fff6f0"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Project details modal (reutilizable) -->
+<div class="modal fade" id="projectModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="projectModalLabel">Proyecto</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p id="projectDesc" class="text-muted">Descripción del proyecto.</p>
+        <div id="projectTags" class="mb-3"></div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Rol: Diseñador / Desarrollador</li>
+              <li class="list-group-item">Tecnologías: Bootstrap, PHP, MySQL</li>
+              <li class="list-group-item">Resultado: Mejora en tasas de conversión</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <!-- Carousel simple con imágenes de ejemplo -->
+            <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                </div>
+                <div class="carousel-item">
+                  <svg class="d-block w-100" width="100%" height="160" viewBox="0 0 600 160"><rect width="100%" height="100%" fill="#fff6f0"></rect><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#ffb37c">Screenshot 2</text></svg>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="modal-footer border-0">
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <a href="#contact" data-bs-toggle="modal" data-bs-target="#contactModal" class="btn btn-primary">Solicitar este servicio</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Contact modal -->
+<!-- Modal (HTML actualizado: añadí name/id al form y a los inputs) -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Contáctame</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <!-- id actualizado para referenciar desde JS -->
+      <form id="contactForm" class="needs-validation" novalidate>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="cname" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="cname" name="nombre" required>
+            <div class="invalid-feedback">Ingresa tu nombre</div>
+          </div>
+          <div class="mb-3">
+            <label for="cemail" class="form-label">Correo</label>
+            <input type="email" class="form-control" id="cemail" name="email" required>
+            <div class="invalid-feedback">Ingresa un correo válido</div>
+          </div>
+          <div class="mb-3">
+            <label for="cmsg" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="cmsg" name="mensaje" rows="3" required></textarea>
+            <div class="invalid-feedback">Cuéntame brevemente tu proyecto</div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>
+
+
+
+<footer class="mt-5 bg-dark text-white py-4">
+  <div class="container d-flex justify-content-between align-items-center">
+ <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center w-100">
+  <div>
+    <div class="mb-0">
+      <strong class="text-white">Joseph Alarcon</strong>
+      <span class="text-white-50">— Portafolio</span>
+    </div>
+    <div class="small text-white-50">Diseño y desarrollo web</div>
+  </div>
+
+  
+</div>
+
+    <div class="text-end small">
+      <!-- Requiere Bootstrap 5 cargado en la página -->
+<div class="d-flex flex-column gap-2" style="max-width:420px;">
+
+  <!-- Email -->
+  <a href="mailto:wizzzzzzrd@gmail.com"
+     class="d-flex align-items-center gap-3 btn btn-light border rounded-3 shadow-sm p-2"
+     aria-label="Enviar correo a wizzzzzzrd@gmail.com">
+    <!-- Icono de correo (usa currentColor para heredar color del botón) -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+      <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v.217l-8 4.8-8-4.8V4z"/>
+      <path d="M0 6.383V12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6.383l-7.684 4.61a1 1 0 0 1-1.632 0L0 6.383z"/>
+    </svg>
+
+    <div class="d-flex flex-column">
+      <span class="fw-semibold">wizzzzzzrd@gmail.com</span>
+      <small class="text-muted">Correo electrónico</small>
+    </div>
+  </a>
+
+  <!-- Instagram -->
+  <a href="https://instagram.com/wizzzzzzrd" target="_blank" rel="noopener noreferrer"
+     class="d-flex align-items-center gap-3 btn btn-light border rounded-3 shadow-sm p-2"
+     aria-label="Visitar Instagram @wizzzzzzrd">
+    <!-- Icono sencillo de Instagram (cuadro con lente) -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+      <circle cx="12" cy="12" r="3.2"></circle>
+      <circle cx="17.5" cy="6.5" r="0.6" fill="currentColor" stroke="none"></circle>
+    </svg>
+
+    <div class="d-flex flex-column">
+      <span class="fw-semibold">@wizzzzzzrd</span>
+      <small class="text-muted">Instagram</small>
+    </div>
+  </a>
+
+</div>
+
+      
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap bundle JS (Popper included) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.getElementById('contactForm');
+  const whatsappNumber = '525641505137'; // +52 5621741898 en formato internacional sin signos
+
+  form.addEventListener('submit', function (evt) {
+    evt.preventDefault();
+    evt.stopPropagation();
+
+    // Usamos validación nativa + clases de Bootstrap
+    if (!form.checkValidity()) {
+      form.classList.add('was-validated');
+      return;
+    }
+
+    // Obtener valores (trim para limpieza)
+    const nombre = (document.getElementById('cname').value || '').trim();
+    const email  = (document.getElementById('cemail').value || '').trim();
+    const mensaje = (document.getElementById('cmsg').value || '').trim();
+
+    // Construir texto (puedes ajustar el formato)
+    const text = [
+      '📩 *Nuevo contacto desde web*',
+      '',
+      `*Nombre:* ${nombre}`,
+      `*Correo:* ${email}`,
+      '*Mensaje:*',
+      mensaje
+    ].join('\n');
+
+    // URL de WhatsApp (abre la conversación con texto prellenado)
+    // Usamos api.whatsapp.com por compatibilidad; wa.me también funciona.
+    const url = 'https://api.whatsapp.com/send?phone=' + whatsappNumber + '&text=' + encodeURIComponent(text);
+
+    // Abrir en nueva pestaña/ventana
+    window.open(url, '_blank');
+
+    // Opcional: cerrar modal (si usas Bootstrap 5)
+    try {
+      const modalEl = document.getElementById('contactModal');
+      const bsModal = bootstrap.Modal.getInstance(modalEl) || new bootstrap.Modal(modalEl);
+      bsModal.hide();
+    } catch (err) {
+      // bootstrap no disponible o error: ignoramos
+    }
+
+    // Reset del formulario y clases de validación
+    form.reset();
+    form.classList.remove('was-validated');
+  });
+});
+</script>
+<script>
+  // Fecha en footer
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Rellenar modal con datos del proyecto
+  var projectModal = document.getElementById('projectModal');
+  projectModal.addEventListener('show.bs.modal', function (event) {
+    var button = event.relatedTarget;
+    var title = button.getAttribute('data-title');
+    var desc = button.getAttribute('data-desc');
+    var tags = button.getAttribute('data-tags');
+
+    projectModal.querySelector('.modal-title').textContent = title;
+    projectModal.querySelector('#projectDesc').textContent = desc;
+    var tagsContainer = projectModal.querySelector('#projectTags');
+    tagsContainer.innerHTML = '';
+    (tags || '').split(',').forEach(function(t){ if(t.trim()){
+      var span = document.createElement('span');
+      span.className = 'badge bg-light text-dark me-1';
+      span.textContent = t.trim();
+      tagsContainer.appendChild(span);
+    }});
+  });
+
+  // Filtrado simple usando atributos data-category
+  document.querySelectorAll('[data-bs-filter]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var filter = this.getAttribute('data-bs-filter');
+      document.querySelectorAll('[data-bs-filter]').forEach(function(b){ b.classList.remove('active'); });
+      this.classList.add('active');
+      document.querySelectorAll('#projectsGrid .col').forEach(function(col){
+        if(filter === 'all' || col.getAttribute('data-category') === filter) col.style.display = '';
+        else col.style.display = 'none';
+      });
+    });
+  });
+
+  // Bootstrap form validation
+  (function () {
+    'use strict'
+    var forms = document.querySelectorAll('.needs-validation')
+    Array.prototype.slice.call(forms).forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        } else {
+          event.preventDefault();
+          // Aquí puedes integrar envío real (fetch / formulario / backend)
+          var btn = form.querySelector('button[type="submit"]');
+          btn.classList.add('disabled'); btn.textContent = 'Enviando...';
+          setTimeout(function(){
+            var modal = bootstrap.Modal.getInstance(document.getElementById('contactModal'));
+            modal.hide();
+            btn.classList.remove('disabled'); btn.textContent = 'Enviar';
+            form.reset();
+            form.classList.remove('was-validated');
+            alert('Gracias — tu mensaje ha sido enviado (demo).');
+          }, 900);
+        }
+        form.classList.add('was-validated')
+      }, false)
+    })
+  })()
+</script>
+</body>
+</html>
